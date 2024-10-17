@@ -20,7 +20,7 @@ In the meantime, happy driving! :D!
 
 1. ** Clone the Repository **
 
-'''powershell
+```powershell
 git clone https://github.com/algx23/DriveDynamics.git
 
 
