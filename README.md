@@ -20,19 +20,17 @@ In the meantime, happy driving! :D!
 
 1. ** Clone the Repository **
 
-```powershell
-git clone https://github.com/algx23/DriveDynamics.git```
+powershell
+```git clone https://github.com/algx23/DriveDynamics.git```
 
 
 2. ** Navigate to the cloned repo **
-```
-cd DriveDynamics/
-```
+
+```cd DriveDynamics/```
 
 3. ** Install Dependencies **
-```
-pip install -r requirements.txt
-```
+
+```pip install -r requirements.txt```
 
 4. ** Connect to OBD Interface **
 
@@ -40,9 +38,7 @@ Ensure your car has a OBD Interface with eg an OBDii Reader in, and connect via 
 
 5. ** Run main.py **
 
-```
-py src/main.py
-```
+```py src/main.py```
 
 ## Feedback
 
