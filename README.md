@@ -46,5 +46,5 @@ If you have any ideas, or suggestions, or you find a bug in this project (likely
 
 ---
 
-Thanks so much for using DynamicDrive!
+Thanks so much for using DriveDynamics!
 
