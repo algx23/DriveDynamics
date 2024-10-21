@@ -2,9 +2,9 @@
 
 ## About the Project
 
-Have you ever wanted to see in depth details about your driving? Perhaps you want to see your throttle inputs, or maybe you want to see how you modulate the brake pressure, in an objective way? Maybe, like me, you also think that this is just a pretty neat thing to see, even if you may not use it all the time.
+Have you ever wanted to see in-depth details about your driving? Perhaps you want to see your throttle inputs, or maybe you want to see how you modulate the brake pressure, in an objective way? Maybe, like me, you also think that this is just a pretty neat thing to see, even if you may not use it all the time.
 
-If that sounds like something you'd like, you'll love this project! I used the pythonOBD library to rad data from the obd sensors in your car, and then plot them in neat litte graphs :). Sure, right now, there aren't that many different graphs to choose from, but as the project evolves, you'll be able to see almost anything you can see with your OBD Reader, in graphical form!
+If that sounds like something you'd like, you'll love this project! I used the pythonOBD library to read data from the obd sensors in your car, and then plot them in neat little graphs :). Sure, right now, there aren't that many different graphs to choose from, but as the project evolves, you'll be able to see almost anything you can see with your OBD Reader, in graphical form!
 
 In the future, I will be working on a nice GUI to go with this application, so stay tuned for that.
 
