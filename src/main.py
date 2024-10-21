@@ -9,6 +9,7 @@ import obd
 import matplotlib.pyplot as plt
 import numpy as np
 from time import time, sleep
+import tkinter as tk
 
 # start obd connection to the car
 connection = obd.OBD()
@@ -57,10 +58,17 @@ def plot_rpm_graph(time_vals: list[float], rpm_vals: list[float]) -> None:
 
 # driver function(s)
 def main() -> None:
-    if connection:
-        plot_rpm_graph(collect_rpm_values)
-    else:
-        print("connection couldnt be made")
+    try:
+        if connection.is_connected():
+            rpm_vals, time_vals = collect_rpm_values()
+            plot_rpm_graph(rpm_vals, time_vals)
+        else:
+            print(
+                "Connection couldn't be made. Please ensure the OBD-II device is plugged in and connected."
+            )
+
+    except Exception as e:
+        print(f"an unexpected error occurred {e}")
 
 
 if __name__ == "__main__":
