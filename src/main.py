@@ -7,7 +7,6 @@ be smoother on the throttle, and could be cool for track days.
 
 import obd
 import matplotlib.pyplot as plt
-import numpy as np
 from time import time, sleep
 import tkinter as tk
 
@@ -28,14 +27,17 @@ def collect_rpm_values() -> list[float]:
     time_vals: list[float] = []
     start_time: float = time()
 
-    while connection:  # true when the engine is on
+    # check the connection again to make sure that there is no unexpected
+    # connection drop during data collection
+    while connection:
         rpm = connection.query(rpm_cmd)
         rpm_vals.append(rpm.value.magnitude)
 
         time_of_measurement: float = time() - start_time
-        time_vals.append(time_of_measurement)
+        if rpm_vals != 0:
+            time_vals.append(time_of_measurement)
 
-        if len(rpm_vals) > 10:
+        if len(rpm_vals) > 10:  # restrict the size of the rpm vals : TESTING ONLY
             break
 
         sleep(1)
@@ -59,13 +61,18 @@ def plot_rpm_graph(time_vals: list[float], rpm_vals: list[float]) -> None:
 # driver function(s)
 def main() -> None:
     try:
-        if connection.is_connected():
+        while True:
+            if not connection.is_connected():
+
+                print(
+                    "Connection couldn't be made. \n"
+                    "Please ensure the OBD-II device is plugged in and connected. \n"
+                    "if you turned off the engine, or unplugged the device yourself, you can ignore this message"
+                )
+                break
+
             rpm_vals, time_vals = collect_rpm_values()
             plot_rpm_graph(rpm_vals, time_vals)
-        else:
-            print(
-                "Connection couldn't be made. Please ensure the OBD-II device is plugged in and connected."
-            )
 
     except Exception as e:
         print(f"an unexpected error occurred {e}")
