@@ -1,5 +1,14 @@
 # DriveDynamics - See your driving telemetry 
 
+## SAFETY / LEGAL WARNING
+As of the current version of this program, it will require your laptop to be open while driving.By downloading DriveDynamics, you agree to follow all road traffic safety laws in your country, state or "gemeinde", and this includes not putting your focus on your device(s_) while driving.
+
+I am not responsible for any damages that may come about if you choose to take your focus off the road to look at the program while driving.
+
+Safety is paramount in all situations, and if this product is likely to, or you yourself are prone to being easily distracted while driving and using something like this, then I HIGHLY SUGGESTyou to not download and use this program - for both your own safety and the safety of all other road users, pedestrians, and anyone in your community around you
+
+
+
 ## About the Project
 
 Have you ever wanted to see in-depth details about your driving? Perhaps you want to see your throttle inputs, or maybe you want to see how you modulate the brake pressure, in an objective way? Maybe, like me, you also think that this is just a pretty neat thing to see, even if you may not use it all the time.
