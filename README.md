@@ -1,13 +1,15 @@
-# DriveDynamics - See your driving telemetry 
+# DriveDynamics - See your driving telemetry
 
 ## SAFETY / LEGAL WARNING
-As of the current version of this program, it will require your laptop to be open while driving.By downloading DriveDynamics, you agree to follow all road traffic safety laws in your country, state or "gemeinde", and this includes not putting your focus on your device(s_) while driving.
 
-I am not responsible for any damages that may come about if you choose to take your focus off the road to look at the program while driving.
+DriveDynamics is designed for informational purposes only and should NEVER be used while operating a vehicle. By downloading and using this software, you agree to:
 
-Safety is paramount in all situations, and if this product is likely to, or you yourself are prone to being easily distracted while driving and using something like this, then I HIGHLY SUGGESTyou to not download and use this program - for both your own safety and the safety of all other road users, pedestrians, and anyone in your community around you
+- Use DriveDynamics only when your vehicle is completely stopped and safely parked.
+- Comply with all applicable traffic laws and regulations in your jurisdiction.
+- Never interact with your device or this software while driving.
 
-
+IMPORTANT: The developer of DriveDynamics is not responsible for any accidents, injuries, or damages resulting from the use or misuse of this software. If you are prone to distraction while driving, DO NOT use this program.
+Your safety and the safety of others on the road are paramount. Distracted driving is dangerous and often illegal. If you cannot use this program safely and responsibly, please do not download or use it.
 
 ## About the Project
 
@@ -19,7 +21,6 @@ In the future, I will be working on a nice GUI to go with this application, so s
 
 In the meantime, happy driving! :D!
 
-
 ## Prerequisites
 
 - For this to work, you must have a USB Connection in your car, to plug in your device.
@@ -30,16 +31,15 @@ In the meantime, happy driving! :D!
 1. ** Clone the Repository **
 
 powershell
-```git clone https://github.com/algx23/DriveDynamics.git```
-
+`git clone https://github.com/algx23/DriveDynamics.git`
 
 2. ** Navigate to the cloned repo **
 
-```cd DriveDynamics/```
+`cd DriveDynamics/`
 
 3. ** Install Dependencies **
 
-```pip install -r requirements.txt```
+`pip install -r requirements.txt`
 
 4. ** Connect to OBD Interface **
 
@@ -47,13 +47,12 @@ Ensure your car has a OBD Interface with eg an OBDii Reader in, and connect via 
 
 5. ** Run main.py **
 
-```py src/main.py```
+`py src/main.py`
 
 ## Feedback
 
-If you have any ideas, or suggestions, or you find a bug in this project (likely :p), feel free to open an Issue! Any and all feedback is appreciated, just keep it constructive! 
+If you have any ideas, or suggestions, or you find a bug in this project (likely :p), feel free to open an Issue! Any and all feedback is appreciated, just keep it constructive!
 
 ---
 
 Thanks so much for using DriveDynamics!
-
