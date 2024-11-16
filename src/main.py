@@ -15,7 +15,8 @@ connection = obd.OBD()
 
 
 def collect_rpm_values() -> list[float]:
-    """collects the RPM values from the car
+    """
+    collects the RPM values from the car
 
     Returns:
         list[float]: the rpm values recorded at regular intervals ie measured one time per second
